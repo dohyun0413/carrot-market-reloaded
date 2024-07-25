@@ -6,14 +6,18 @@ export default function Home() {
         <input 
           className="w-full rounded-full h-12
           bg-gray-200 pl-5 outline-none ring
-           ring-transparent focus:ring-orange-500 focus:ring-offset-2 transition-shadow
-           placeholder:drop-shadow"
-          type = "text" 
-          placeholder="Search here..."
+           ring-transparent focus:ring-green-500 focus:ring-offset-2 transition-shadow
+           placeholder:drop-shadow
+           invalid:focus:ring-red-500 peer"
+          type = "email" 
+          required
+          placeholder="Email address"
           />
-        <button className="bg-black bg-opacity-80 text-white py-2 rounded-full 
-        active:scale-90 transition-transform font-medium outline-none md: px-10">
-          Search
+        <span className="text-red-500 font-medium hidden peer-invalid:block">
+          Email is required.</span>  
+        <button className="text-white py-2 rounded-full 
+        active:scale-90 transition-transform font-medium outline-none md: px-10 bg-gradient-to-tr bg-black peer-required:bg-green-500">
+          Log In
           </button>
       </div>
     </main>
