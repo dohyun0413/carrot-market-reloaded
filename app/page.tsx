@@ -14,6 +14,7 @@ export default function Home() {
             Make sure it is a valid email...
           </span>
           <button className="w-full bg-black h-10 text-white rounded-sexy-name">Submit</button>
+          <a href="#">bbbb</a>
         </div>
       </div>
     </main>

@@ -8,11 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend:{
+      margin:{
+        tomato: "120px"
+      },
       borderRadius:{
         "sexy-name" : "11.11px",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    //require("daisyui")
+    require("@tailwindcss/forms")
+  ],
 };
 export default config;
