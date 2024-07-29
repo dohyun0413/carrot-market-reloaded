@@ -12,7 +12,7 @@ export default function Login() {
       <form className="flex flex-col gap-3">
         <FormInput type = "email" placeholder = "Email" required errors = {[""]}   />
         <FormInput type = "password" placeholder = "Password" required errors = {[""]}   />
-        <FormButton loading = {false} text = "Create account" />
+        <FormButton loading = {false} text = "Login" />
       </form>
       <SocialLogin />
     </div>
